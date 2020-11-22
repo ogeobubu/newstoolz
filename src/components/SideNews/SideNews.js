@@ -47,7 +47,12 @@ function SideNews({ getTerms }) {
               <p style={{ fontSize: "0.9rem", color: "gray" }}>
                 {moment(randNewsItem.publishedAt).fromNow()}
               </p>
-              <a href={randNewsItem.url} rel="noreferrer" target="_blank">
+              <a
+                style={{ textDecoration: "none" }}
+                href={randNewsItem.url}
+                rel="noreferrer"
+                target="_blank"
+              >
                 Read More
               </a>
             </Typography>

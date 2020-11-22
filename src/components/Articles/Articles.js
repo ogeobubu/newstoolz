@@ -10,7 +10,7 @@ function Articles() {
 
   useEffect(() => {
     fetch(
-      "https://cors-anywhere.herokuapp.com/https://gnews.io/api/v4/top-headlines?lang=en&country=us&token=2de9424adff037df3e93efec748ee37e"
+      "https://cors-anywhere.herokuapp.com/https://gnews.io/api/v4/top-headlines?lang=en&country=us&token=9fb47aa83689c67a12320436a968da0b"
     )
       .then((response) => response.json())
       .then((data) => {

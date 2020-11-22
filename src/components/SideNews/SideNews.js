@@ -16,7 +16,7 @@ function SideNews({ getTerms }) {
     fetch(
       `https://cors-anywhere.herokuapp.com/https://gnews.io/api/v4/search?lang=en&q=${
         getTerms === "" ? "technology" : getTerms
-      }&token=2de9424adff037df3e93efec748ee37e`,
+      }&token=9fb47aa83689c67a12320436a968da0b`,
       { signal: signal }
     )
       .then((response) => response.json())

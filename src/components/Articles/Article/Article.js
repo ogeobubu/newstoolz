@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React from "react";
 import useStyles from "./styles";
 import {
   Card,
@@ -18,7 +18,7 @@ function Article({
     title,
     url,
     image,
-    source: { id, name },
+    source: { id },
   },
 }) {
   const classes = useStyles();

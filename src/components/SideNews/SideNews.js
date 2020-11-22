@@ -6,12 +6,9 @@ import useStyles from "./styles";
 
 import moment from "moment";
 
-// import uuid from "uuid;
-
 function SideNews({ getTerms }) {
   const classes = useStyles();
   const [randNews, setRandNews] = useState([]);
-  // const id = uuid;
 
   useEffect(() => {
     const abortController = new AbortController();
@@ -41,12 +38,15 @@ function SideNews({ getTerms }) {
       {randNews &&
         randNews.map((randNewsItem) => {
           return (
-            <Typography className={classes.headlines} component="p">
+            <Typography
+              key={randNewsItem.title}
+              className={classes.headlines}
+              component="p"
+            >
               {randNewsItem.title}{" "}
-              <span style={{ fontSize: "0.9rem", color: "gray" }}>
+              <p style={{ fontSize: "0.9rem", color: "gray" }}>
                 {moment(randNewsItem.publishedAt).fromNow()}
-              </span>{" "}
-              -{" "}
+              </p>
               <a href={randNewsItem.url} target="_blank">
                 Read More
               </a>

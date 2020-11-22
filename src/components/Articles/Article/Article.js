@@ -64,7 +64,13 @@ function Article({
           </Typography>
         </CardContent>
         <CardActions className={classes.cardActions}>
-          <Button target="_blank" href={url} size="small" color="primary">
+          <Button
+            rel="noreferrer"
+            target="_blank"
+            href={url}
+            size="small"
+            color="primary"
+          >
             Read More
           </Button>
         </CardActions>

@@ -17,7 +17,7 @@ function Article({
     publishedAt,
     title,
     url,
-    urlToImage,
+    image,
     source: { id, name },
   },
 }) {
@@ -28,9 +28,9 @@ function Article({
         <CardMedia
           className={classes.media}
           image={
-            urlToImage === null
+            image === null
               ? "https://businessafrica-emp.org/BusinessAfrica/images/no_image_news.png"
-              : urlToImage
+              : image
           }
           title={title}
         />
